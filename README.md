@@ -10,6 +10,7 @@ Learning_Vim
 # vim & markdown
 
 ## vim中markdown的配置
+
 参考这个网页中的内容，（http://calefy.org/2012/03/01/set-vim-markdown-syntax-highlight.html ），摘录下来。这个博主使用的也是vim markdown这个插件。
         
         在vim中设置markdown语法高亮是一个不错的选择，但是在google中搜索到的很多都是比较老的设置方式，甚至vim插件下载页面都是一个旧的版本。这里总结下我的修改过程，以帮助像我一样纠结的人。
@@ -65,4 +66,4 @@ Learning_Vim
         使用chrome插件Markdown Preview Plus。在插件管理界面选中”Allow access to file URLs”，在插件自身的选项里选中
         “Enable auto-reload”,还以选择内置的CSS或者自定义CSS，这插件还挺靠谱。
         
-        然后用vim写Markdown,Chrome就可以实时预览了
+        然后用vim写Markdown,用chrome浏览器打开markdown文件预览html,修改了markdown文件之后，刷新一下chrome的预览，就会看到更新的markdown文件。
