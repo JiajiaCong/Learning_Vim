@@ -83,6 +83,7 @@ Learning_Vim
     在命令模式下，将光标移动到将要粘贴的行处，按“p”进行粘贴
 
 - 删除（http://www.study-area.org/tips/vim/Vim-3.html ）
+        
         x  刪除游標所在處之字元。在 vim 及 elvis 亦可用 Del 鍵。
         X  刪除游標前之字元。不可使用 Backspace 鍵。
         vim 可以正確使用以上兩個指令於中文，會刪去一個中文字。elvis 則不行，一個中文字要刪兩次，即使用 xx。
