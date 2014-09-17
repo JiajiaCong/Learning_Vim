@@ -70,3 +70,7 @@ Learning_Vim
         “Enable auto-reload”,还以选择内置的CSS或者自定义CSS，这插件还挺靠谱。
         
         然后用vim写Markdown,用chrome浏览器打开markdown文件预览html,修改了markdown文件之后，刷新一下chrome的预览，就会看到更新的markdown文件。
+
+
+# Vim小技巧
+- 在Vim中你可以把两行合并为一行，也就是说两行之间的换行符被删除了：命令是"J"。
