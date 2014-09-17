@@ -7,6 +7,9 @@ Learning_Vim
 :pwd                       查看当前的工作路径     
 :set autochdir            自动设当前编辑的文件所在目录为当前工作路径     
 
+# 一篇很全面的vim的入门介绍
+[很全面的vim入门介绍]（http://blog.interlinked.org/tutorials/vim_tutorial.html ）
+
 # vim & markdown
 
 ## vim中markdown的配置
