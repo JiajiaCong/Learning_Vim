@@ -81,6 +81,14 @@ Learning_Vim
  这个！的意思是要在vim中运行cmd的命令，所以必须要加，不能省去。
  
  同样的方法可以将md转为其他的格式，语法和一般的pandoc语法是一样的，只是要在vim中加上:!这样一个表示vim命令状态（:），一个表示运行cmd的命令（！）。
+ 
+ 
+## vim中安装vundle
+
+- 首先从github中下载vundle包，vundle在github中的网址是(https://github.com/gmarik/Vundle.vim )。我window7中安装了gitbash,在gitbash中输入以下的命令
+
+        git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 
 # Vim小技巧
 - 在Vim中你可以把两行合并为一行，也就是说两行之间的换行符被删除了：命令是"J"。
