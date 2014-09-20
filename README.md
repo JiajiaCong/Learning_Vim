@@ -96,26 +96,19 @@ Learning_Vim
   - 在电脑里的一个地方防止curl.exe文件，比如我在C:\Program Files (x86)下新建了一个curl文件夹，把curl.exe放在这个文件夹下。
   - 非常重要的一步是把C:\Program Files (x86)\curl这个curl.exe所在的路径放入到电脑的系统路径path中。
   - 新建一个空的txt文件，把下面的命令粘贴进这个txt空文件中，保存之后，将此空文本文件重命名为curl.cmd
-        @rem Do not use "echo off" to not affect any child calls.
         
+        @rem Do not use "echo off" to not affect any child calls.
         @setlocal
         
         @rem Get the abolute path to the parent directory, which is assumed to be the
         @rem Git installation root.  
-              
         @for /F "delims=" %%I in ("%~dp0..") do @set git_install_root=%%~fI  
-              
         @set PATH=%git_install_root%\bin;%git_install_root%\mingw\bin;%PATH%  
-
-  
       
-@if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%  
-      
-@if not exist "%HOME%" @set HOME=%USERPROFILE%  
+        @if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%  
+        @if not exist "%HOME%" @set HOME=%USERPROFILE%  
   
-  
-    
-@curl.exe %*  
+        @curl.exe %*  
 
 
 # Vim小技巧
