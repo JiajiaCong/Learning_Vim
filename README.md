@@ -88,6 +88,10 @@ Learning_Vim
 - 首先从github中下载vundle包，vundle在github中的网址是(https://github.com/gmarik/Vundle.vim )。我window7中安装了gitbash,在gitbash中输入以下的命令
 
         git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+- 从github中clone下来的vundle包在C:\Users\ms-off1\.vim中，会出现一个名为bundle的文件夹，这个文件夹下面会有一个Vundle.vim的文件夹。**非常重要的一点事是将这个文件夹重命名为vundle**。
+- 将重命名后的bundle文件夹复制一份，放入到vim安装目录下的vimfiles中，在我的电脑里是放在C:\Program Files (x86)\Vim\vimfiles下。这个目录下会有一份bundle文件夹，这个文件夹下有一个vundle文件夹。
+- 安装curl脚本
+  - google curl，curl的官方下载网站是（http://curl.haxx.se/download.html ）。从这个网页上找到对应自己电脑的安装包，下载zip文件包。
 
 
 # Vim小技巧
