@@ -1,16 +1,30 @@
 Learning_Vim
 ============
 
+
+
+
 # 设定vim的工作路径
 :cd                        改变vim的当前工作路径    
 :lcd                       改变当前窗口的工作路径     
 :pwd                       查看当前的工作路径     
 :set autochdir            自动设当前编辑的文件所在目录为当前工作路径     
 
+
+
+
+
+
 # 一篇很全面的vim的入门介绍
 [很全面的vim入门介绍]（http://blog.interlinked.org/tutorials/vim_tutorial.html ）
 
+
+
+
+
+
 # vim & markdown
+
 
 ## vim中markdown的配置
 
@@ -64,12 +78,18 @@ Learning_Vim
         相比较很多之前文章介绍的复杂方式，这个应该是最传统简单的了。只要放置对应目录的文件，不需要在vim用户配置文件中做
         任何修改即可使用markdown的语法高亮，比单纯的文本明了很多。
 
+
+
+
 ## vim写markdown的实时预览
 
         使用chrome插件Markdown Preview Plus。在插件管理界面选中”Allow access to file URLs”，在插件自身的选项里选中
         “Enable auto-reload”,还以选择内置的CSS或者自定义CSS，这插件还挺靠谱。
         
         然后用vim写Markdown,用chrome浏览器打开markdown文件预览html,修改了markdown文件之后，刷新一下chrome的预览，就会看到更新的markdown文件。
+
+
+
 
 ## vim中直接运行pandoc
 吐槽一下那个vim pandoc包，奶奶的，一点都好不用！更简单的方法如下。
@@ -81,6 +101,8 @@ Learning_Vim
  这个！的意思是要在vim中运行cmd的命令，所以必须要加，不能省去。
  
  同样的方法可以将md转为其他的格式，语法和一般的pandoc语法是一样的，只是要在vim中加上:!这样一个表示vim命令状态（:），一个表示运行cmd的命令（！）。
+ 
+ 
  
  
 ## vim中安装vundle
@@ -113,7 +135,7 @@ Learning_Vim
   - 在cmd中输入curl --version来检测curl是否已经安装成功。
   
 - 配置_vimrc文件
-  在_vimrc文件中加入以下的命令
+  在_vimrc文件中加入以下的命令，这个命令来自这个网站（http://www.haiyun.me/archives/vim-vundle.html ）
 
         set nocompatible "与vi不一致
         filetype off
@@ -133,7 +155,25 @@ Learning_Vim
         Bundle 'Lucius'
         filetype plugin indent on
    
-  
+- 至此，vim中vundle就安装成功了。但是在使用BundleInstall这样的命令式经常回出现如下的报错
+
+        E303: Unable to open swap file for "[No Name]", recovery impossible
+中文gvim中的报错大概是这样
+        
+        E303：无法打开“[Vundle] List”的交换文件，恢复将不可能。
+具体为什么会出现这个报错，请看这个网站的说明（http://blog.csdn.net/tms_li/article/details/16369235 ）。这个网站顺带也提供了解决方法。
+
+        A good location would be the directory pointed to by the %TEMP% environment variable. On Windows 7, this points to C:\Users\AverageJoe\AppData\Local\Temp
+就是将C:\Users\AverageJoe\AppData\Local\Temp命名为%TEMP%的环境变量，并且将%TEMP%加入到系统路径中。然后在_vimrc中加入下面的语句
+        
+        set dir=$TEMP
+这样这个报错的问题就会解决了。
+
+- Vundle的使用
+        
+
+
+
 
 # Vim小技巧
 - 在Vim中你可以把两行合并为一行，也就是说两行之间的换行符被删除了：命令是"J"。
