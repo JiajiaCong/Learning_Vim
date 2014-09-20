@@ -97,20 +97,41 @@ Learning_Vim
   - 非常重要的一步是把C:\Program Files (x86)\curl这个curl.exe所在的路径放入到电脑的系统路径path中。
   - 新建一个空的txt文件，把下面的命令粘贴进这个txt空文件中，保存之后，将此空文本文件重命名为curl.cmd
                 
-                @rem Do not use "echo off" to not affect any child calls.
-                @setlocal
-                
-                @rem Get the abolute path to the parent directory, which is assumed to be the
-                @rem Git installation root.  
-                @for /F "delims=" %%I in ("%~dp0..") do @set git_install_root=%%~fI  
-                @set PATH=%git_install_root%\bin;%git_install_root%\mingw\bin;%PATH%  
-              
-                @if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%  
-                @if not exist "%HOME%" @set HOME=%USERPROFILE%  
-          
-                @curl.exe %*  
+        @rem Do not use "echo off" to not affect any child calls.
+        @setlocal
+        
+        @rem Get the abolute path to the parent directory, which is assumed to be the
+        @rem Git installation root.  
+        @for /F "delims=" %%I in ("%~dp0..") do @set git_install_root=%%~fI  
+        @set PATH=%git_install_root%\bin;%git_install_root%\mingw\bin;%PATH%  
+      
+        @if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%  
+        @if not exist "%HOME%" @set HOME=%USERPROFILE%  
+  
+        @curl.exe %*  
   - 将curl.cmd文件放入到git的安装路径中，我的电脑中git的路径是C:\Program Files (x86)\Git，就把curl.cmd放入到这个路径下。
   - 在cmd中输入curl --version来检测curl是否已经安装成功。
+  
+- 配置_vimrc文件
+  在_vimrc文件中加入以下的命令
+
+        set nocompatible "与vi不一致
+        filetype off
+        set rtp+=~/.vim/bundle/vundle/ "载入特定目录插件
+        "set rtp+=$HOME/.vim/bundle/vundle/ "Windows下
+        call vundle#rc()
+        "plugin 
+        "vimscripts账号下的项目直接填写名称即可
+        Bundle 'snipMate'
+        "其它需填写用户/资源名称
+        Bundle 'gmarik/vundle'
+        "非github上资源
+        Bundle 'git://git.wincent.com/command-t.git'
+        "indent
+        Bundle 'php.vim-html-enhanced'
+        "color
+        Bundle 'Lucius'
+        filetype plugin indent on
    
   
 
