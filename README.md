@@ -171,7 +171,8 @@ Learning_Vim
 
 - Vundle的使用
  :BundleInstall 就可以自动安装上述配置文件中的 vim 插件    
- 如果要更新插件，运行命令 :BundleInstall!    
+ :BundleInstall!   更新全部插件
+ :BundleUpdate  更新某一个插件
  如果要删除插件，则从 .vimrc 文件中删除或注释掉相应行，然后运行 :BundleClean 即可       
  :BundleSearch+插件名称，就是搜索这个插件    
  :BundleList 显示所有已经安装的插件   
