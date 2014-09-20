@@ -195,11 +195,7 @@ Learning_Vim
 
 __重要的是ctrl+n和ctrl+p进行补全__
 
-_vimrc加入下面两行
 
-        filetype plugin on  
-        autocmd FileType python set omnifunc=pythoncomplete#Complete  
-打开vim,按下 Ctrl+x（好像不能用）, Ctrl+o， 就能看到提示列表框
 
 ## 5.2 Python_fode的安装
 
@@ -207,7 +203,7 @@ _vimrc加入下面两行
 
 　　下载：http://vim.sourceforge.net/scripts/script.php?script_id=515
 
-　　安装：将下载的python_fold.vim拷贝到C:\Users\ms-off1\.vim\plugin 目录下。
+　　安装：将下载的python_fold.vim拷贝到C:\Users\ms-off1\\.vim\plugin 目录下。如果没有plugin这个文件夹，就新建一个。
 
 　　　　关闭开启时默认折叠命令，在.vimrc写入：
 
