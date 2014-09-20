@@ -188,7 +188,7 @@ Learning_Vim
 然后配置_vimrc
         
         filetype plugin on
-        let g:pydiction_location = 'C:\Users \ms-off1\.vim\bundle\complete-dict' 
+        let g:pydiction_location = 'C:\Users \ms-off1\.vim\bundle\complete-dict' (Users之后一定要有一个空格，不知道是为什么！！)
         let g:pydiction_menu_height = 3 
 这里的3的意思是补全时有多少个选项。
         
@@ -203,7 +203,7 @@ __重要的是ctrl+n和ctrl+p进行补全__
 
 　　下载：http://vim.sourceforge.net/scripts/script.php?script_id=515
 
-　　安装：将下载的python_fold.vim拷贝到C:\Users\ms-off1\\.vim\plugin 目录下。如果没有plugin这个文件夹，就新建一个。
+　　安装：将下载的python_fold.vim拷贝到C:\Users \ms-off1\\.vim\plugin 目录下(Users之后一定要有一个空格，不知道是为什么！！)。如果没有plugin这个文件夹，就新建一个。
 
 　　　　关闭开启时默认折叠命令，在.vimrc写入：
 
