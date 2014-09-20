@@ -173,6 +173,28 @@ Learning_Vim
         
 
 
+#Vim中Python的配置
+
+#python mode的安装
+
+#Python_fode的安装
+
+简介：将Python代码折叠，Python的class，function，以及在{{{,}}}标记的内容将被折叠。
+
+　　下载：http://vim.sourceforge.net/scripts/script.php?script_id=515
+
+　　安装：将下载的python_fold.vim拷贝到C:\Users\ms-off1\.vim\plugin 目录下。
+
+　　　　关闭开启时默认折叠命令，在.vimrc写入：
+
+        set foldmethod=indent
+　　　　zo: 展开单个折叠区。
+
+　　　　zc: 聚合单个折叠区。
+
+　　　　zn: 展开全部折叠区。
+
+　　　　zN: 聚合全部折叠区。
 
 
 # Vim小技巧
