@@ -71,6 +71,16 @@ Learning_Vim
         
         然后用vim写Markdown,用chrome浏览器打开markdown文件预览html,修改了markdown文件之后，刷新一下chrome的预览，就会看到更新的markdown文件。
 
+## vim中直接运行pandoc
+吐槽一下那个vim pandoc包，奶奶的，一点都好不用！更简单的方法如下。
+
+比如我们要把test.md在vim中直接转成pdf，并且直接通过vim命令来打开。可以通过下面的命令来实现。
+
+    :!pandoc test.md -s -o test.pdf  --latex-engine=xelatex --template=template.tex
+    :!.\test.pdf
+ 这个！的意思是要在vim中运行cmd的命令，所以必须要加，不能省去。
+ 
+ 同样的方法可以将md转为其他的格式，语法和一般的pandoc语法是一样的，只是要在vim中加上:!这样一个表示vim命令状态（:），一个表示运行cmd的命令（！）。
 
 # Vim小技巧
 - 在Vim中你可以把两行合并为一行，也就是说两行之间的换行符被删除了：命令是"J"。
