@@ -175,7 +175,23 @@ Learning_Vim
 
 #Vim中Python的配置
 
-#python mode的安装
+#pythoncomplete自动补全的安装
+自动补全用的是pydiction这个包。可以在（http://www.vim.org/scripts/script.php?script_id=850 ）下载，也可以用vundle安装。
+官网给的安装方法如下
+
+        cd ~/.vim/bundle 
+        git clone https://github.com/rkulla/pydiction.git 
+可以看到是先进入到C:\Users\ms-off1\.vim\bundle下，然后通过git把pydiction克隆到这个目录下。
+
+然后配置_vimrc
+
+__重要的是ctrl+n和ctrl+p进行补全__
+
+_vimrc加入下面两行
+
+        filetype plugin on  
+        autocmd FileType python set omnifunc=pythoncomplete#Complete  
+打开vim,按下 Ctrl+x（好像不能用）, Ctrl+o， 就能看到提示列表框
 
 #Python_fode的安装
 
