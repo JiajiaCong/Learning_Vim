@@ -92,6 +92,30 @@ Learning_Vim
 - 将重命名后的bundle文件夹复制一份，放入到vim安装目录下的vimfiles中，在我的电脑里是放在C:\Program Files (x86)\Vim\vimfiles下。这个目录下会有一份bundle文件夹，这个文件夹下有一个vundle文件夹。
 - 安装curl脚本
   - google curl，curl的官方下载网站是（http://curl.haxx.se/download.html ）。从这个网页上找到对应自己电脑的安装包，下载zip文件包。
+  - 将此下载的zip包解压，里面有一个curl.exe文件，双击安装，一下子就安装好了。
+  - 在电脑里的一个地方防止curl.exe文件，比如我在C:\Program Files (x86)下新建了一个curl文件夹，把curl.exe放在这个文件夹下。
+  - 非常重要的一步是把C:\Program Files (x86)\curl这个curl.exe所在的路径放入到电脑的系统路径path中。
+  - 新建一个空的txt文件，把下面的命令粘贴进这个txt空文件中，保存之后，将此空文本文件重命名为curl.cmd
+        @rem Do not use "echo off" to not affect any child calls.
+        
+        @setlocal
+        
+        @rem Get the abolute path to the parent directory, which is assumed to be the
+        @rem Git installation root.  
+              
+        @for /F "delims=" %%I in ("%~dp0..") do @set git_install_root=%%~fI  
+              
+        @set PATH=%git_install_root%\bin;%git_install_root%\mingw\bin;%PATH%  
+
+  
+      
+@if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%  
+      
+@if not exist "%HOME%" @set HOME=%USERPROFILE%  
+  
+  
+    
+@curl.exe %*  
 
 
 # Vim小技巧
