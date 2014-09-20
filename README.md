@@ -4,7 +4,7 @@ Learning_Vim
 
 
 
-# 设定vim的工作路径
+# 1. 设定vim的工作路径
 :cd                        改变vim的当前工作路径    
 :lcd                       改变当前窗口的工作路径     
 :pwd                       查看当前的工作路径     
@@ -15,7 +15,7 @@ Learning_Vim
 
 
 
-# 一篇很全面的vim的入门介绍
+# 2. 一篇很全面的vim的入门介绍
 [很全面的vim入门介绍]（http://blog.interlinked.org/tutorials/vim_tutorial.html ）
 
 
@@ -23,11 +23,10 @@ Learning_Vim
 
 
 
-# vim & markdown
+# 3. vim & markdown
 
 
-## vim中markdown的配置
-
+## 3.1 vim中markdown的设置
 参考这个网页中的内容，（http://calefy.org/2012/03/01/set-vim-markdown-syntax-highlight.html ），摘录下来。这个博主使用的也是vim markdown这个插件。
         
         在vim中设置markdown语法高亮是一个不错的选择，但是在google中搜索到的很多都是比较老的设置方式，甚至vim插件下载页面都是一个旧的版本。这里总结下我的修改过程，以帮助像我一样纠结的人。
@@ -61,8 +60,6 @@ Learning_Vim
         一切就是这么简单，复制到对应目录，然后重启你的vim就ok了。
         
         
-        
-        
         插件内容
         
         尽管名字相同，两个文件夹中的文件是不同的。
@@ -81,7 +78,7 @@ Learning_Vim
 
 
 
-## vim写markdown的实时预览
+## 3.2 vim写markdown的实时预览
 
         使用chrome插件Markdown Preview Plus。在插件管理界面选中”Allow access to file URLs”，在插件自身的选项里选中
         “Enable auto-reload”,还以选择内置的CSS或者自定义CSS，这插件还挺靠谱。
@@ -91,7 +88,7 @@ Learning_Vim
 
 
 
-## vim中直接运行pandoc
+## 3.3 vim中直接运行pandoc
 吐槽一下那个vim pandoc包，奶奶的，一点都好不用！更简单的方法如下。
 
 比如我们要把test.md在vim中直接转成pdf，并且直接通过vim命令来打开。可以通过下面的命令来实现。
@@ -105,7 +102,7 @@ Learning_Vim
  
  
  
-## vim中安装vundle
+# 4. vim中安装vundle
 
 - 首先从github中下载vundle包，vundle在github中的网址是(https://github.com/gmarik/Vundle.vim )。我window7中安装了gitbash,在gitbash中输入以下的命令
 
@@ -178,9 +175,9 @@ Learning_Vim
  :BundleList 显示所有已经安装的插件   
 
 
-#Vim中Python的配置
+# 5.Vim中Python的配置
 
-#pythoncomplete自动补全的安装
+## 5.1 pythoncomplete自动补全的安装
 自动补全用的是pydiction这个包。可以在（http://www.vim.org/scripts/script.php?script_id=850 ）下载，也可以用vundle安装。
 官网给的安装方法如下
 
@@ -204,7 +201,7 @@ _vimrc加入下面两行
         autocmd FileType python set omnifunc=pythoncomplete#Complete  
 打开vim,按下 Ctrl+x（好像不能用）, Ctrl+o， 就能看到提示列表框
 
-#Python_fode的安装
+## 5.2 Python_fode的安装
 
 简介：将Python代码折叠，Python的class，function，以及在{{{,}}}标记的内容将被折叠。
 
@@ -231,7 +228,7 @@ _vimrc加入下面两行
         zM: 作用和 zm 类似，但会关闭子折叠；    
         zi: 折叠与打开操作之间的切换命令；    
 
-# Vim小技巧
+# 6.Vim小技巧
 - 在Vim中你可以把两行合并为一行，也就是说两行之间的换行符被删除了：命令是"J"。
 - 复制（http://blog.sina.com.cn/s/blog_5caa94a00100codi.html ）
     - yw	将光标所在之处到字尾的字符复制到缓冲区中，可以用来复制一个单词
