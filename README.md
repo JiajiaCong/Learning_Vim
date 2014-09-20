@@ -177,7 +177,7 @@ Learning_Vim
 
 # 5.Vim中Python的配置
 
-## 5.1 pythoncomplete自动补全的安装
+## 5.1 pydiction自动补全的安装
 自动补全用的是pydiction这个包。可以在（http://www.vim.org/scripts/script.php?script_id=850 ）下载，也可以用vundle安装。
 官网给的安装方法如下
 
