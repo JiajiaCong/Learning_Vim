@@ -181,9 +181,15 @@ Learning_Vim
 
         cd ~/.vim/bundle 
         git clone https://github.com/rkulla/pydiction.git 
-可以看到是先进入到C:\Users\ms-off1\.vim\bundle下，然后通过git把pydiction克隆到这个目录下。
+可以看到是先进入到C:\Users \ms-off1\.vim\bundle下，然后通过git把pydiction克隆到这个目录下。
 
 然后配置_vimrc
+        
+        filetype plugin on
+        let g:pydiction_location = 'C:\Users \ms-off1\.vim\bundle\complete-dict' 
+        let g:pydiction_menu_height = 3 
+这里的3的意思是补全时有多少个选项。
+        
 
 __重要的是ctrl+n和ctrl+p进行补全__
 
