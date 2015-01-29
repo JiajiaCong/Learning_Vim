@@ -388,6 +388,7 @@ __重要的是ctrl+n和ctrl+p进行补全__
         :/^part2/,/^part3/g/^chapter/.+2w>>begin|+t$
         
 - 分屏和关闭当前屏幕
+
         :new，新建文件并分屏， 快捷键，Ctrl+W，然后马上按n键 
 
         :spilt 水平分屏，将当前屏分为两个，水平的。   Ctrl + w, s
