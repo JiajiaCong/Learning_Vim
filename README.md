@@ -386,3 +386,9 @@ __重要的是ctrl+n和ctrl+p进行补全__
         :/^part2/,/^part3/g/^chapter/.+2w>>begin
         —-
         :/^part2/,/^part3/g/^chapter/.+2w>>begin|+t$
+        
+- 分屏和关闭当前屏幕
+        :new，新建文件并分屏， 快捷键，Ctrl+W，然后马上按n键
+        :spilt 水平分屏，将当前屏分为两个，水平的。   Ctrl + w, s
+        :vsplit 垂直分屏，将当前屏分为两个，垂直的。  Ctrl + w, v
+        :only 取消分屏，取消当前的屏，当前屏指的是光标所在屏。
