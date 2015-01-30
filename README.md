@@ -408,3 +408,5 @@ __重要的是ctrl+n和ctrl+p进行补全__
 
         set guifont=Courier\ New\:h12 
         set guifontwide=NSimsun\:h12 
+        
+        原文来自http://lxs647.iteye.com/blog/1994010
