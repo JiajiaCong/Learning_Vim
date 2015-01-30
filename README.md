@@ -399,12 +399,12 @@ __重要的是ctrl+n和ctrl+p进行补全__
         
 - vim中中文乱码的解决办法
 
-        "vim支持打开的文件编码 \\
-        set fileencodings=utf-8,ucs-bom,shift-jis,latin1,big5,gb18030,gbk,gb2312,cp936  "文件 UTF-8 编码\\
-        " 解决显示界面乱码\\
-        set fileencoding=utf-8 \\
-        set encoding=utf-8		"vim 内部编码 \\
-        set termencoding=utf-8 \\
+        "vim支持打开的文件编码 
+        set fileencodings=utf-8,ucs-bom,shift-jis,latin1,big5,gb18030,gbk,gb2312,cp936  "文件 UTF-8 编码
+        " 解决显示界面乱码
+        set fileencoding=utf-8 
+        set encoding=utf-8		"vim 内部编码 
+        set termencoding=utf-8 
 
-        set guifont=Courier\ New\:h12 \\
-        set guifontwide=NSimsun\:h12 \\
+        set guifont=Courier\ New\:h12 
+        set guifontwide=NSimsun\:h12 
